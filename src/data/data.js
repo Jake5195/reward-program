@@ -1,5 +1,4 @@
 // Assume data coming through API was aggreagated by customer
-// Data will be an array of objects with the type {name: string, transactions: [{data, ammount}]}
 
 export const getCustomerData = async () => {
   return new Promise((resolve) => {
@@ -113,6 +112,4 @@ export const getCustomerData = async () => {
       resolve(data);
     }, 3000);
   });
-  // console.log('we are done waiting 3 seconds')
-  // return result;
 };
